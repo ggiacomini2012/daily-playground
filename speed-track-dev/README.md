@@ -128,20 +128,8 @@ Para distribuir o SpeedTracker como um programa `.exe` que não precisa de Pytho
     No terminal, a partir da pasta raiz do projeto, execute o seguinte comando. Ele irá criar um único arquivo `.exe`, sem a janela de console preta e com um ícone personalizado.
 
     ```bash
-    pyinstaller --onefile --windowed --icon="art/app_icon.ico" speed_tracker_app.py
+    ./installer.sh
     ```
-
-      * `--onefile`: Agrupa tudo em um único arquivo executável.
-      * `--windowed`: Impede que o terminal/console apareça ao executar o app.
-      * `--icon`: Define o ícone do aplicativo (lembre-se de ter um arquivo `.ico` no caminho especificado).
-
-3.  **Mova o Executável:**
-    O PyInstaller criará uma pasta chamada `dist`. **Mova o arquivo `speed_tracker_app.exe` de dentro da pasta `dist` para a pasta raiz do projeto.**
-
-4.  **Limpeza (Opcional):**
-    Após mover o executável, você pode apagar com segurança a pasta `build` e o arquivo `speed_tracker_app.spec`, pois eles são apenas arquivos temporários do processo de compilação.
-
-Agora você pode compartilhar o arquivo `.exe` com outros usuários do Windows.
 
 -----
 
