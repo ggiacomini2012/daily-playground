@@ -1,6 +1,3 @@
-Certo! Prepare-se para um `README.md` **gigantesco**, cheio de emojis e formatado para impressionar. Vamos criar algo que não só descreva o seu repositório, mas que também celebre a sua jornada de aprendizado.
-
----
 
 # 🚀 daily-playground 🚀
 
