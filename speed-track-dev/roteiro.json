@@ -4,127 +4,127 @@
       "id": 1,
       "acao": "JavaScript",
       "tempo_minutos": 1,
-      "tarefa_especifica_hoje": "Escreva uma função de uma linha usando arrow function que receba um array de números e retorne apenas os números pares."
+      "tarefa_especifica_hoje": "Crie um array de 3 elementos e use 'Array.prototype.map()' para retornar um novo array onde cada item é capitalizado."
     },
     {
       "id": 2,
       "acao": "Python",
       "tempo_minutos": 1,
-      "tarefa_especifica_hoje": "Use uma list comprehension para gerar uma lista dos quadrados dos números de 1 a 10."
+      "tarefa_especifica_hoje": "Escreva uma função anônima (lambda) que receba 3 números e retorne o produto deles. Teste com um 'print()'."
     },
     {
       "id": 3,
       "acao": "Java",
       "tempo_minutos": 1,
-      "tarefa_especifica_hoje": "Declare uma variável do tipo `HashMap` que mapeia `Integer` para `String` e adicione um par chave-valor a ela."
+      "tarefa_especifica_hoje": "Declare uma variável 'int' e uma variável 'String'. Use 'String.valueOf()' para converter o 'int' e imprima a concatenação das duas."
     },
     {
       "id": 4,
       "acao": "HTML",
       "tempo_minutos": 1,
-      "tarefa_especifica_hoje": "Crie um elemento `<input>` do tipo 'date' e defina um valor padrão para a data de hoje."
+      "tarefa_especifica_hoje": "Crie uma tag `<figure>` e insira uma imagem (`<img>`) dentro. Adicione uma legenda usando a tag `<figcaption>`."
     },
     {
       "id": 5,
       "acao": "CSS",
       "tempo_minutos": 1,
-      "tarefa_especifica_hoje": "Escreva uma regra CSS para que todos os elementos `<a>` que possuem o atributo `target='_blank'` tenham um ícone de 'link externo' (unicode) depois do texto."
+      "tarefa_especifica_hoje": "Crie uma classe CSS chamada `.sombra-suave` que aplique um `box-shadow` com offset 2px 2px, blur 5px e cor `#333`."
     },
     {
       "id": 6,
       "acao": "SQL",
       "tempo_minutos": 1,
-      "tarefa_especifica_hoje": "Escreva uma query `SELECT` que retorne todos os usuários de uma tabela 'users' onde o email termine com '@example.com'."
+      "tarefa_especifica_hoje": "Escreva uma consulta SQL que use `LEFT JOIN` entre as tabelas `Produtos` e `Pedidos` para listar todos os produtos, mesmo os que nunca foram pedidos."
     },
     {
       "id": 7,
       "acao": "Classes e POO",
       "tempo_minutos": 1,
-      "tarefa_especifica_hoje": "Em sua linguagem preferida, crie uma classe 'Veiculo' com um método 'acelerar()' que imprime 'Acelerando...' no console."
+      "tarefa_especifica_hoje": "Defina uma classe base `Animal` e uma classe derivada `Cachorro` que sobrescreve um método `emitir_som()`."
     },
     {
       "id": 8,
       "acao": "Musictutor/Foco",
       "tempo_minutos": 1,
-      "tarefa_especifica_hoje": "Abra um metrônomo online, configure-o para 60 BPM e sincronize sua respiração com a batida por 60 segundos."
+      "tarefa_especifica_hoje": "Use um metrônomo online e mantenha o ritmo em 140 BPM (batidas por minuto) por 60 segundos, sem distração."
     },
     {
       "id": 9,
       "acao": "Desafio HackerRank",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Acesse o HackerRank, vá para a seção 'Algorithms', filtre por 'Easy' e leia o enunciado do primeiro problema da lista 'Warmup'. Tente resolver apenas a lógica no papel ou pseudocódigo."
+      "tarefa_especifica_hoje": "Escolha um problema 'Easy' e dedique os 5 minutos a ler e compreender completamente a restrição de entrada/saída do desafio."
     },
     {
       "id": 10,
       "acao": "Bash/Terminal",
       "tempo_minutos": 1,
-      "tarefa_especifica_hoje": "Use o comando `grep` para encontrar todas as ocorrências da palavra 'function' em um arquivo de código-fonte de sua escolha."
+      "tarefa_especifica_hoje": "Use o comando `find` para listar todos os arquivos `.txt` no seu diretório `home` e redirecione a saída para um arquivo chamado `lista.log`."
     },
     {
       "id": 11,
       "acao": "Assembly",
       "tempo_minutos": 1,
-      "tarefa_especifica_hoje": "Escreva uma única instrução em Assembly (qualquer arquitetura, como x86) para mover o valor 5 para um registrador (por exemplo, `MOV EAX, 5`)."
+      "tarefa_especifica_hoje": "Pesquise qual é a instrução Assembly (x86 ou ARM) usada para somar o conteúdo de dois registradores e anote-a."
     },
     {
       "id": 12,
       "acao": "CI/CD",
       "tempo_minutos": 1,
-      "tarefa_especifica_hoje": "Em um arquivo `gitlab-ci.yml` ou `main.yml` (GitHub Actions), escreva a sintaxe básica para definir um 'stage' chamado 'build'."
+      "tarefa_especifica_hoje": "Defina em uma frase o que é uma 'Pipeline' e o que significa a etapa de 'Deploy' dentro do contexto de CI/CD."
     },
     {
       "id": 13,
       "acao": "Docker Compose",
       "tempo_minutos": 1,
-      "tarefa_especifica_hoje": "Escreva a estrutura básica de um `docker-compose.yml` para um serviço chamado 'web', usando a imagem 'nginx:latest'."
+      "tarefa_especifica_hoje": "Crie um arquivo `docker-compose.yml` mínimo, definindo um único serviço chamado `web` usando a imagem `nginx:latest`."
     },
     {
       "id": 14,
       "acao": "Git",
       "tempo_minutos": 1,
-      "tarefa_especifica_hoje": "Execute o comando `git log --oneline --graph --all` em um de seus repositórios para visualizar a árvore de commits."
+      "tarefa_especifica_hoje": "Use `git add .`, depois `git commit --amend` para adicionar suas mudanças ao commit anterior, e force a alteração com um novo 'push'."
     },
     {
       "id": 15,
       "acao": "Testes",
       "tempo_minutos": 1,
-      "tarefa_especifica_hoje": "Usando seu framework de teste preferido, escreva um `assert` que verifique se a soma de 2+2 é igual a 4."
+      "tarefa_especifica_hoje": "Escreva uma função simples em pseudocódigo e em seguida escreva um caso de teste (unitário) para garantir que ela lide com uma entrada nula (null)."
     },
     {
       "id": 16,
       "acao": "UX/UI e Design Patterns",
       "tempo_minutos": 1,
-      "tarefa_especifica_hoje": "Identifique e anote um exemplo do padrão de design 'Singleton' em qualquer base de código que você tenha acesso."
+      "tarefa_especifica_hoje": "Pesquise e defina em uma frase o 'Design Pattern' conhecido como **Singleton**."
     },
     {
       "id": 17,
       "acao": "Segurança Cibernética",
       "tempo_minutos": 1,
-      "tarefa_especifica_hoje": "Pesquise no Google sobre 'SQL Injection' e leia a primeira frase da definição da OWASP."
+      "tarefa_especifica_hoje": "O que é 'Cross-Site Scripting (XSS)'? Anote a principal medida de prevenção contra ele (ex: sanitização de entrada)."
     },
     {
       "id": 18,
       "acao": "Documentação/READMEs",
       "tempo_minutos": 1,
-      "tarefa_especifica_hoje": "Adicione uma seção '## Pré-requisitos' a um arquivo README.md de um projeto seu, listando uma dependência necessária."
+      "tarefa_especifica_hoje": "Abra um projeto antigo e adicione uma seção 'Pré-requisitos' no README, listando o OS e as versões mínimas de linguagem/runtime necessárias."
     },
     {
       "id": 19,
       "acao": "Artigo LinkedIn",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Escreva um rascunho de 3 frases para um post no LinkedIn sobre uma nova tecnologia que você aprendeu. Comece com uma pergunta para engajar o leitor."
+      "tarefa_especifica_hoje": "Escreva o rascunho de 3 parágrafos curtos sobre 'A importância da revisão de código (Code Review) para a qualidade do software'."
     },
     {
       "id": 20,
       "acao": "Estudo/Aula + GitHub",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Encontre um vídeo de 5 minutos no YouTube sobre 'Clean Architecture'. Crie um novo repositório no GitHub chamado 'clean-architecture-studies' e adicione um README.md com o link do vídeo e uma anotação de uma frase sobre o que aprendeu."
+      "tarefa_especifica_hoje": "Assista aos 5 primeiros minutos de um vídeo ou tutorial sobre **GraphQL**. Crie um novo repositório no GitHub para salvar notas sobre isso."
     },
     {
       "id": 21,
       "acao": "Aplicar para Vaga",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Acesse o LinkedIn, pesquise por uma vaga de desenvolvedor com uma tecnologia que você domina, salve a vaga e encontre o nome de um recrutador ou gerente de engenharia da empresa para se conectar."
+      "tarefa_especifica_hoje": "Localize uma vaga de desenvolvedor Júnior/Pleno e adapte o primeiro parágrafo do seu currículo para que contenha 3 palavras-chave exatas da descrição da vaga."
     }
   ]
 }

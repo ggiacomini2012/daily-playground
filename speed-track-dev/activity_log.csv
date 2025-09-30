@@ -1,7 +1,0 @@
-timestamp,acao,tarefa_especifica,duracao_minutos
-2025-09-29 10:18:26,JavaScript,Escreva uma função de uma linha usando arrow function que receba um array de números e retorne apenas os números pares.,1
-2025-09-29 10:31:59,JavaScript,Escreva uma função de uma linha usando arrow function que receba um array de números e retorne apenas os números pares.,1
-2025-09-29 10:33:03,Python,Use uma list comprehension para gerar uma lista dos quadrados dos números de 1 a 10.,1
-2025-09-29 10:34:06,Java,Declare uma variável do tipo `HashMap` que mapeia `Integer` para `String` e adicione um par chave-valor a ela.,1
-2025-09-29 12:02:51,JavaScript,Escreva uma função de uma linha usando arrow function que receba um array de números e retorne apenas os números pares.,1
-2025-09-29 12:09:56,Python,Use uma list comprehension para gerar uma lista dos quadrados dos números de 1 a 10.,1

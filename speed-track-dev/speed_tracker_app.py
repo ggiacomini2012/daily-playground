@@ -29,7 +29,7 @@ ctk.set_default_color_theme("blue")
 
 # Cores
 COLOR_TIMER = "#88C0D0"; COLOR_ALERT = "#A3BE8C"; COLOR_WARNING = "#D08770"; COLOR_CLOSE_HOVER = "#BF616A"
-STATUS_COLORS = {"pending": "#5E6C84", "active": "#88C0D0", "completed": "#A3BE8C"}
+STATUS_COLORS = {"pending": "#5E6C84", "active": "#88C0D0", "completed": "#2ECC71"}
 
 # --- 1. A NOVA CLASSE PARA A SPLASH SCREEN ---
 class SplashScreen(ctk.CTkToplevel):
@@ -102,6 +102,9 @@ class SpeedTrackerApp(ctk.CTk):
         self.seconds_remaining = 0; self.is_paused = False
         self.timer_job = None; self.log_file = LOG_PATH
 
+        self.task_font = ctk.CTkFont(family="Helvetica", size=12)
+        self.task_font_strikethrough = ctk.CTkFont(family="Helvetica", size=12, overstrike=True)
+
         self.create_widgets()
         self.setup_log_file()
         self.load_tasks()
@@ -121,31 +124,72 @@ class SpeedTrackerApp(ctk.CTk):
         title_bar = ctk.CTkFrame(self, height=30, corner_radius=0); title_bar.grid(row=0, column=0, columnspan=2, sticky="ew"); title_bar.grid_columnconfigure(1, weight=1)
         title_label = ctk.CTkLabel(title_bar, text="✒️ SpeedTracker Dev", font=("Helvetica", 12)); title_label.grid(row=0, column=0, padx=10, sticky="w")
         file_button = ctk.CTkButton(title_bar, text="Arquivo", width=80, height=22, command=self.open_roteiro_file); file_button.grid(row=0, column=2, padx=(0, 5), pady=4)
-        close_button = ctk.CTkButton(title_bar, text="✕", width=30, height=22, command=self.destroy, fg_color="transparent", hover_color=COLOR_CLOSE_HOVER); close_button.grid(row=0, column=3, padx=(0, 5), pady=4)
+        paste_button = ctk.CTkButton(title_bar, text="Colar JSON", width=90, height=22, command=self.open_paste_window); paste_button.grid(row=0, column=3, padx=(0, 5), pady=4)
+        close_button = ctk.CTkButton(title_bar, text="✕", width=30, height=22, command=self.destroy, fg_color="transparent", hover_color=COLOR_CLOSE_HOVER); close_button.grid(row=0, column=4, padx=(0, 5), pady=4)
         title_bar.bind("<ButtonPress-1>", self.on_press); title_label.bind("<ButtonPress-1>", self.on_press); title_bar.bind("<B1-Motion>", self.on_drag); title_label.bind("<B1-Motion>", self.on_drag)
         main_frame = ctk.CTkFrame(self, fg_color="transparent"); main_frame.grid(row=1, column=0, sticky="nsew", padx=10, pady=10); main_frame.grid_columnconfigure(0, weight=1)
         font_action = ("Helvetica", 24, "bold"); font_task = ("Helvetica", 14); font_timer = ("Helvetica", 80, "bold")
         self.action_label = ctk.CTkLabel(main_frame, text="Bem-vindo!", font=font_action); self.action_label.grid(row=0, column=0, pady=(10, 5))
-        self.task_label = ctk.CTkLabel(main_frame, text="Carregue um roteiro ou selecione uma tarefa na lista.", font=font_task, wraplength=480); self.task_label.grid(row=1, column=0, pady=5, padx=10)
+        self.task_label = ctk.CTkLabel(main_frame, text="Carregue um roteiro ou selecione uma tarefa na lista.", font=font_task, wraplength=400); self.task_label.grid(row=1, column=0, pady=5, padx=10)
         self.copy_button = ctk.CTkButton(main_frame, text="Copiar Enunciado", width=120, height=24, font=("Helvetica", 10), command=self.copy_task_to_clipboard, state=tk.DISABLED); self.copy_button.grid(row=2, column=0, pady=(0, 10))
         self.timer_label = ctk.CTkLabel(main_frame, text="00:00", font=font_timer, text_color=COLOR_TIMER); self.timer_label.grid(row=3, column=0, pady=10)
         button_frame = ctk.CTkFrame(main_frame, fg_color="transparent"); button_frame.grid(row=4, column=0, pady=10)
         self.start_button = ctk.CTkButton(button_frame, text="Iniciar Roteiro", command=self.start_roteiro, font=("Helvetica", 14, "bold"), width=150, height=35); self.start_button.pack(side=tk.LEFT, padx=10)
         self.pause_button = ctk.CTkButton(button_frame, text="Pausar", command=self.toggle_pause, font=("Helvetica", 14, "bold"), width=150, height=35, state=tk.DISABLED); self.pause_button.pack(side=tk.LEFT, padx=10)
-        self.task_list_frame = ctk.CTkScrollableFrame(self, label_text="Tarefas do Roteiro", width=220); self.task_list_frame.grid(row=1, column=1, sticky="nsew", padx=10, pady=10)
+        self.task_list_frame = ctk.CTkScrollableFrame(self, label_text="Tarefas do Roteiro", width=280); self.task_list_frame.grid(row=1, column=1, sticky="nsew", padx=10, pady=10)
     def populate_task_list(self):
         for widget in self.task_list_frame.winfo_children(): widget.destroy()
         self.task_widgets = []
         for i, task in enumerate(self.tasks):
             task_item_frame = ctk.CTkFrame(self.task_list_frame); task_item_frame.pack(fill="x", expand=True, padx=5, pady=3)
+            
             status_indicator = ctk.CTkLabel(task_item_frame, text="●", font=("Arial", 18)); status_indicator.pack(side="left", padx=(5, 10))
-            task_name_label = ctk.CTkLabel(task_item_frame, text=task["acao"], anchor="w"); task_name_label.pack(side="left", fill="x", expand=True)
-            self.task_widgets.append({"frame": task_item_frame, "status": status_indicator, "name": task_name_label})
-            task_item_frame.bind("<Button-1>", partial(self.jump_to_task, i)); status_indicator.bind("<Button-1>", partial(self.jump_to_task, i)); task_name_label.bind("<Button-1>", partial(self.jump_to_task, i))
-            status = "completed" if self.progress[i] else "pending"; self.update_task_status(i, status)
+            
+            check_button = ctk.CTkButton(task_item_frame, text="✓", width=24, height=24, fg_color="transparent", border_width=1, command=partial(self.toggle_task_completion, i))
+            check_button.pack(side="right", padx=(5, 5))
+
+            task_name_label = ctk.CTkLabel(task_item_frame, text=task["acao"], anchor="w", font=self.task_font); task_name_label.pack(side="left", fill="x", expand=True, padx=5)
+            
+            self.task_widgets.append({"frame": task_item_frame, "status": status_indicator, "name": task_name_label, "check_button": check_button})
+            
+            # Bind clicks to the indicator and label, but not the whole frame, to avoid conflict with the button
+            status_indicator.bind("<Button-1>", partial(self.jump_to_task, i))
+            task_name_label.bind("<Button-1>", partial(self.jump_to_task, i))
+
+            status = "completed" if self.progress[i] else "pending"
+            self.update_task_status(i, status)
     def update_task_status(self, index, status):
-        if 0 <= index < len(self.task_widgets): self.task_widgets[index]["status"].configure(text_color=STATUS_COLORS.get(status, "#FFFFFF"))
+        if 0 <= index < len(self.task_widgets):
+            widget_info = self.task_widgets[index]
+            label = widget_info["name"]
+            
+            widget_info["status"].configure(text_color=STATUS_COLORS.get(status, "#FFFFFF"))
+            
+            if status == "completed":
+                label.configure(font=self.task_font_strikethrough, text_color="gray60")
+            else: # pending or active
+                label.configure(font=self.task_font, text_color=ctk.ThemeManager.theme["CTkLabel"]["text_color"])
+
+    def toggle_task_completion(self, index):
+        is_now_complete = not self.progress[index]
+        
+        # Prevent un-checking the active task while the timer is running
+        if not is_now_complete and index == self.current_task_index and self.timer_job and not self.is_paused:
+            messagebox.showwarning("Ação Inválida", "Pause o roteiro antes de desmarcar a tarefa ativa.")
+            return
+
+        self.progress[index] = is_now_complete
+        self.save_progress()
+
+        new_status = "completed" if is_now_complete else "pending"
+        
+        if not is_now_complete and index == self.current_task_index:
+            new_status = "active"
+
+        self.update_task_status(index, new_status)
+
     def jump_to_task(self, index, event=None):
+        self.attributes('-topmost', False)
         if self.timer_job: self.after_cancel(self.timer_job)
         if self.current_task_index != -1 and not self.progress[self.current_task_index]: self.update_task_status(self.current_task_index, "pending")
         self.current_task_index = index; task = self.tasks[index]
@@ -154,18 +198,41 @@ class SpeedTrackerApp(ctk.CTk):
         self.update_task_status(index, "active"); self.countdown(task['tempo_minutos'] * 60)
     def load_progress(self):
         try:
-            with open(PROGRESS_PATH, "r") as f: self.progress = json.load()
+            with open(PROGRESS_PATH, "r") as f: self.progress = json.load(f)
             if len(self.progress) != len(self.tasks): raise ValueError("Progresso desalinhado.")
         except (FileNotFoundError, ValueError): self.progress = [False] * len(self.tasks)
     def save_progress(self):
         with open(PROGRESS_PATH, "w") as f: json.dump(self.progress, f)
+
+    def _process_task_data(self, data):
+        """Processa os dados do roteiro, atualiza o estado e a UI."""
+        self.tasks = data.get("roteiro_speed_tracking", [])
+        if not self.tasks:
+            raise ValueError("JSON inválido ou chave 'roteiro_speed_tracking' não encontrada.")
+        self.load_progress()
+        self.populate_task_list()
+        self.reset_app_state()
+
+    def load_tasks_from_string(self, json_string):
+        """Carrega tarefas de uma string JSON."""
+        try:
+            data = json.loads(json_string)
+            self._process_task_data(data)
+        except (ValueError, json.JSONDecodeError) as e:
+            messagebox.showerror("Erro ao Carregar", f"Erro no formato JSON: {e}")
+            self.tasks = []
+            self.reset_app_state()
+
     def load_tasks(self, filepath=None):
         if filepath is None: filepath = ROTEIRO_PATH
         try:
-            with open(filepath, "r", encoding="utf-8") as f: data = json.load(f); self.tasks = data.get("roteiro_speed_tracking", []);
-            if not self.tasks: raise ValueError("JSON inválido.")
-            self.load_progress(); self.populate_task_list(); self.reset_app_state();
-        except (FileNotFoundError, ValueError, json.JSONDecodeError) as e: messagebox.showerror("Erro ao Carregar", f"Não foi possível carregar: {e}"); self.tasks = []; self.reset_app_state()
+            with open(filepath, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            self._process_task_data(data)
+        except (FileNotFoundError, ValueError, json.JSONDecodeError) as e:
+            messagebox.showerror("Erro ao Carregar", f"Não foi possível carregar o arquivo: {e}")
+            self.tasks = []
+            self.reset_app_state()
     def task_finished_handler(self):
         self.timer_label.configure(text="Fim!", text_color=COLOR_ALERT); self.bell(); self.bell()
         if self.current_task_index != -1:
@@ -176,6 +243,7 @@ class SpeedTrackerApp(ctk.CTk):
         next_index = next((i for i in range(self.current_task_index + 1, len(self.tasks)) if not self.progress[i]), -1)
         if next_index != -1: self.jump_to_task(next_index)
         else:
+            self.attributes('-topmost', False)
             self.action_label.configure(text="Parabéns!"); self.task_label.configure(text="Você completou o roteiro.")
             self.timer_label.configure(text="✅"); self.start_button.configure(state=tk.NORMAL, text="Reiniciar")
             self.pause_button.configure(state=tk.DISABLED); self.copy_button.configure(state=tk.DISABLED)
@@ -186,6 +254,44 @@ class SpeedTrackerApp(ctk.CTk):
     def open_roteiro_file(self):
         filepath = filedialog.askopenfilename(title="Selecione um roteiro", initialdir=base_path, filetypes=[("JSON files", "*.json")])
         if filepath: self.load_tasks(filepath)
+
+    def open_paste_window(self):
+        paste_win = ctk.CTkToplevel(self)
+        paste_win.title("Colar Roteiro JSON")
+        paste_win.geometry("450x350")
+        paste_win.transient(self)
+        paste_win.grab_set()
+
+        # Centraliza a janela de colar
+        self.update_idletasks()
+        win_x = self.winfo_rootx() + (self.winfo_width() // 2) - (paste_win.winfo_width() // 2)
+        win_y = self.winfo_rooty() + (self.winfo_height() // 2) - (paste_win.winfo_height() // 2)
+        paste_win.geometry(f"+{win_x}+{win_y}")
+
+        label = ctk.CTkLabel(paste_win, text="Cole o conteúdo do roteiro em formato JSON:")
+        label.pack(pady=(10, 5), padx=10)
+
+        textbox = ctk.CTkTextbox(paste_win, wrap="word")
+        textbox.pack(pady=5, padx=10, fill="both", expand=True)
+        textbox.focus()
+
+        def on_load():
+            json_string = textbox.get("1.0", "end-1c")
+            if json_string.strip():
+                self.load_tasks_from_string(json_string)
+                paste_win.destroy()
+            else:
+                messagebox.showwarning("Aviso", "A caixa de texto está vazia.", parent=paste_win)
+
+        button_frame = ctk.CTkFrame(paste_win, fg_color="transparent")
+        button_frame.pack(pady=10)
+
+        load_button = ctk.CTkButton(button_frame, text="Carregar", command=on_load)
+        load_button.pack(side=tk.LEFT, padx=10)
+
+        cancel_button = ctk.CTkButton(button_frame, text="Cancelar", command=paste_win.destroy, fg_color="gray50")
+        cancel_button.pack(side=tk.LEFT, padx=10)
+
     def setup_log_file(self):
         if not os.path.exists(self.log_file):
             with open(self.log_file, "w", newline="", encoding="utf-8") as f: csv.writer(f).writerow(["timestamp", "acao", "tarefa_especifica", "duracao_minutos"])
@@ -206,8 +312,12 @@ class SpeedTrackerApp(ctk.CTk):
             self.timer_job = self.after(1000, self.countdown, seconds_left - 1)
         else: self.task_finished_handler()
     def toggle_pause(self):
-        self.is_paused = not self.is_paused; self.pause_button.configure(text="Retomar" if self.is_paused else "Pausar")
-        if not self.is_paused: self.countdown(self.seconds_remaining)
+        self.is_paused = not self.is_paused
+        self.pause_button.configure(text="Retomar" if self.is_paused else "Pausar")
+        if self.is_paused:
+            self.attributes('-topmost', False)
+        else:
+            self.countdown(self.seconds_remaining)
     def log_activity(self, task):
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         with open(self.log_file, "a", newline="", encoding="utf-8") as f: csv.writer(f).writerow([timestamp, task['acao'], task['tarefa_especifica_hoje'], task['tempo_minutos']])
