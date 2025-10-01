@@ -1,4 +1,3 @@
-package java.exercises;
 import java.util.HashMap;
 import java.util.Map;
 

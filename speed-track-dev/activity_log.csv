@@ -1,0 +1,9 @@
+timestamp,acao,tarefa_especifica,duracao_minutos
+2025-10-01 10:06:08,JavaScript,Crie um **closure** em JS que mantenha o contador de execuções de uma função interna.,5
+2025-10-01 10:24:40,CSS,Aplique a propriedade **`grid-template-areas`** para organizar um layout de cabeçalho e rodapé.,5
+2025-10-01 10:29:47,SQL,Escreva uma consulta SQL usando **`COUNT()` e `GROUP BY`** para contar o número de pedidos por cliente.,5
+2025-10-01 10:34:53,Classes e POO,"Defina uma classe 'Animal' e uma classe 'Cachorro' que a **herda**, sobrescrevendo um método 'emitirSom'.",5
+2025-10-01 10:40:00,MusicTutor,Fazer um exercício de **leitura de clave de Sol** no app Musictutor.,5
+2025-10-01 10:45:07,Desafio HackerRank,Resolva a primeira parte do desafio 'Mini-Max Sum' (ou equivalente) focando na **lógica da solução**.,5
+2025-10-01 11:42:25,Assembly,Pesquise e anote a função (instrução) do **registrador `EIP` ou `PC`** (Program Counter).,5
+2025-10-01 12:01:59,Testes,Escreva um **test case (descrição)** para uma função que verifica se um e-mail é válido (caso de falha: formato inválido).,5

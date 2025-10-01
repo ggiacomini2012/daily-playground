@@ -1,0 +1,21 @@
+# Nome do arquivo deveria ser docker-compose.yml
+# Version não é necessário para versões mais recentes do Docker.
+Version: '3.8'
+
+services:
+  web_app:
+    image: nginx:latest
+    container_name: meu_servico_web
+    ports:
+      - "8080:80"
+    
+    # -----------------------------------------------
+    # INSTRUÇÃO DE REINICIALIZAÇÃO:
+    # 'always' garante que o contêiner será sempre reiniciado se parar,
+    # mesmo após uma reinicialização do Docker ou do servidor,
+    # a menos que ele tenha sido parado manualmente (ex: docker compose stop).
+    restart: always
+    # -----------------------------------------------
+    
+    volumes:
+      - ./html:/usr/share/nginx/html
