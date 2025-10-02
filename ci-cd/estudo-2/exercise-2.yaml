@@ -1,0 +1,40 @@
+name: Pipeline de Build do Projeto
+
+# Define os eventos que acionam a pipeline
+on:
+  push:
+    branches: [ "main", "develop" ]
+  pull_request:
+    branches: [ "main" ]
+
+# A seção 'jobs' define os estágios da pipeline
+jobs:
+  # Este é o job/estágio 'build' solicitado.
+  build:
+    # Define o sistema operacional onde o job será executado
+    runs-on: ubuntu-latest
+    
+    # Define as etapas (steps) que serão executadas no estágio de build
+    steps:
+    
+    # 1. Checkout do código
+    - name: Checkout do Repositório
+      uses: actions/checkout@v4
+      
+    # 2. Configuração do ambiente (exemplo com Node.js)
+    - name: Configurar Node.js 20.x
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        
+    # 3. Instalação de dependências
+    - name: Instalar Dependências
+      run: npm install
+      
+    # 4. Execução da compilação
+    - name: Executar o Build
+      run: npm run build
+      
+    # 5. Mensagem de sucesso (Opcional)
+    - name: Confirmação do Estágio de Build
+      run: echo "O estágio de build foi concluído e o artefato está pronto para a próxima etapa."

@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+
+
+# Explicação do arquivo:
+# version: '3.8': Define a versão do formato Docker Compose a ser usada.
+
+# services:: Inicia a seção onde os serviços são definidos.
+
+# web:: É o nome do serviço que você solicitou.
+
+# image: nginx:alpine: Especifica a imagem Docker a ser usada para este serviço.
+
+# ports:: Define o mapeamento de portas.
+
+# - "8080:80": Mapeia a porta 8080 na sua máquina local (host) para a porta 80 dentro do contêiner (que é a porta padrão que o nginx escuta).
+
+# Para iniciar este serviço, salve o conteúdo acima em um arquivo chamado docker-compose.yml e execute docker compose up -d no mesmo diretório. Você poderá acessar o servidor Nginx em http://localhost:8080.

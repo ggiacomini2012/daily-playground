@@ -1,3 +1,5 @@
+package java.exercises;
+
 // 3. Classe principal para testar o uso da enum (o arquivo se chamaria TesteDiaUtil.java)
 public class TesteDiaUtil {
     

@@ -7,3 +7,8 @@ timestamp,acao,tarefa_especifica,duracao_minutos
 2025-10-01 10:45:07,Desafio HackerRank,Resolva a primeira parte do desafio 'Mini-Max Sum' (ou equivalente) focando na **lógica da solução**.,5
 2025-10-01 11:42:25,Assembly,Pesquise e anote a função (instrução) do **registrador `EIP` ou `PC`** (Program Counter).,5
 2025-10-01 12:01:59,Testes,Escreva um **test case (descrição)** para uma função que verifica se um e-mail é válido (caso de falha: formato inválido).,5
+2025-10-02 09:48:25,Java,Crie uma classe 'Carro' com um método 'acelerar()' que imprime 'Vrum!'.,5
+2025-10-02 10:08:05,Classes e POO,Defina uma classe base 'Animal' e uma classe filha 'Cachorro' que sobrescreve o método 'emitirSom()'.,5
+2025-10-02 10:14:56,Desafio HackerRank,"Inicie o desafio mais fácil de 'Warmup' (e.g., 'Simple Array Sum') e escreva apenas a declaração da função e a primeira linha de lógica.",5
+2025-10-02 10:23:52,Assembly,Pesquise e anote a sintaxe Assembly (x86 ou ARM) para a instrução básica de mover ('MOV') um valor para um registrador.,5
+2025-10-02 10:31:34,CI/CD,Escreva um bloco inicial de um arquivo '.gitlab-ci.yml' ou '.github/workflows/main.yml' que define um estágio ('stage') chamado 'build'.,5

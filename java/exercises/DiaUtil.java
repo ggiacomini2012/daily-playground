@@ -1,3 +1,5 @@
+package java.exercises;
+
 // 1. Definição da enumeração (o arquivo se chamaria DiaUtil.java)
 public enum DiaUtil {
     // 2. Membros da enumeração: são constantes estáticas e finais.
