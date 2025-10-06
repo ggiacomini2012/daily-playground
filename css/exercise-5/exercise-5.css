@@ -1,0 +1,30 @@
+/* 1. ESTADO INICIAL e TRANSIÇÃO */
+.elemento-animado {
+    /* Dimensões e aparência para o exemplo */
+    width: 150px;
+    height: 150px;
+    background-color: #3498db; /* Azul */
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    
+    /* Define a transição para todas as propriedades que mudarem, 
+        durando 0.3 segundos e usando a função 'ease-in-out' para suavizar. */
+    transition: transform 0.3s ease-in-out; 
+    
+    /* Estado inicial: nenhuma rotação */
+    transform: rotate(0deg);
+}
+
+/* 2. ESTADO NO HOVER (ANIMAÇÃO) */
+.elemento-animado:hover {
+    /* Aplica a rotação de 15 graus ao passar o mouse */
+    transform: rotate(15deg);
+    
+    /* Opcional: Altera a cor para dar feedback visual adicional */
+    background-color: #e74c3c; /* Vermelho */
+}
