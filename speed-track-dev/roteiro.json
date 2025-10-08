@@ -1,0 +1,130 @@
+{
+  "roteiro_speed_tracking": [
+    {
+      "id": 1,
+      "acao": "JavaScript",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Escreva uma função de uma linha usando arrow function que recebe um array de números e retorna a soma de todos os elementos."
+    },
+    {
+      "id": 2,
+      "acao": "Python",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Crie uma list comprehension que gera os quadrados dos números pares de 1 a 10."
+    },
+    {
+      "id": 3,
+      "acao": "Java",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Instancie um objeto `HashMap<String, Integer>` e adicione três pares chave-valor representando nomes e idades."
+    },
+    {
+      "id": 4,
+      "acao": "HTML",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Crie um formulário simples com um campo de texto para 'email' e um botão de 'submit'. Use os atributos `name` e `type` corretamente."
+    },
+    {
+      "id": 5,
+      "acao": "CSS",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Escreva uma regra CSS para que todos os elementos `<p>` dentro de uma `<div>` com a classe 'container' tenham a cor de texto vermelha."
+    },
+    {
+      "id": 6,
+      "acao": "SQL",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Escreva uma query `SELECT` para buscar o nome e o email de todos os usuários da tabela 'clientes' que se cadastraram no último mês, ordenados por data de cadastro descendente."
+    },
+    {
+      "id": 7,
+      "acao": "Classes e POO",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Defina uma classe 'Produto' em Python com um construtor que inicializa os atributos 'nome' e 'preco'. Crie um método que retorna o preço com 10% de desconto."
+    },
+    {
+      "id": 8,
+      "acao": "MusicTutor",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "fazer exercicio do app Musictutor"
+    },
+    {
+      "id": 9,
+      "acao": "Desafio HackerRank",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Leia o enunciado e escreva o pseudocódigo para a solução do primeiro problema 'Easy' não resolvido da sua lista."
+    },
+    {
+      "id": 10,
+      "acao": "Bash/Terminal",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Use o comando `grep` para encontrar todas as ocorrências da palavra 'error' em um arquivo `app.log` e redirecione a saída para um novo arquivo `errors_only.log`."
+    },
+    {
+      "id": 11,
+      "acao": "Assembly",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Escreva o código Assembly (x86) para mover o valor 5 para o registrador EAX."
+    },
+    {
+      "id": 12,
+      "acao": "CI/CD",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Crie um arquivo `.github/workflows/main.yml` básico que é acionado em um `push` para a branch `main` e define um `job` chamado 'build' que apenas executa `echo 'Building...'`."
+    },
+    {
+      "id": 13,
+      "acao": "Docker Compose",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Escreva um `docker-compose.yml` que define dois serviços: 'db' usando a imagem `postgres:latest` e 'web' usando a imagem `nginx:latest`, sem configurar dependências ou volumes."
+    },
+    {
+      "id": 14,
+      "acao": "Git",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Execute `git stash` para salvar suas alterações não commitadas e, em seguida, `git stash pop` para reaplicá-las."
+    },
+    {
+      "id": 15,
+      "acao": "Testes",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Escreva um teste unitário simples (usando a sintaxe de qualquer framework como Jest ou PyTest) que verifica se a função `soma(2, 2)` retorna 4."
+    },
+    {
+      "id": 16,
+      "acao": "UX/UI e Design Patterns",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Acesse o site Dribbble, encontre um design de interface de que goste e anote três motivos específicos (cores, espaçamento, tipografia) pelos quais ele é eficaz."
+    },
+    {
+      "id": 17,
+      "acao": "Segurança Cibernética",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Pesquise o que é 'SQL Injection' e escreva um exemplo de uma string de entrada maliciosa que poderia explorar essa vulnerabilidade (ex: `' OR '1'='1`)."
+    },
+    {
+      "id": 18,
+      "acao": "Documentação/READMEs",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Adicione uma seção '## Instalação' a um arquivo `README.md` com um bloco de código mostrando o comando `npm install`."
+    },
+    {
+      "id": 19,
+      "acao": "Artigo LinkedIn",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Escreva um rascunho de post para o LinkedIn (3 frases) sobre uma nova função de uma linguagem ou framework que você aprendeu recentemente."
+    },
+    {
+      "id": 20,
+      "acao": "Estudo/Aula + GitHub",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Assista aos primeiros 5 minutos de um vídeo técnico no YouTube e crie um novo repositório no GitHub com o nome do tópico, fazendo um commit inicial com um `README.md` vazio."
+    },
+    {
+      "id": 21,
+      "acao": "Aplicar para Vaga",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Encontre uma vaga de desenvolvedor no LinkedIn, abra a seção 'Sobre a vaga' e identifique os 3 principais requisitos técnicos. Compare-os com suas habilidades atuais."
+    }
+  ]
+}

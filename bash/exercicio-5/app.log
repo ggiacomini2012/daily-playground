@@ -1,0 +1,13 @@
+[2025-10-08 10:00:01] [INFO] [SystemInit] - Aplicação inicializada com sucesso. Versão 2.1.
+[2025-10-08 10:00:05] [DEBUG] [Database] - Conexão estabelecida com o banco de dados 'users_db'.
+[2025-10-08 10:00:15] [WARN] [AuthService] - Tentativa de login falhou para o usuário 'guest'. Senha incorreta.
+[2025-10-08 10:00:25] [ERROR] [Network] - Tempo limite de resposta excedido ao conectar com API externa. (Código 504)
+[2025-10-08 10:00:30] [INFO] [UserService] - Novo usuário 'user_456' registrado com IP 192.168.1.10.
+[2025-10-08 10:00:45] [WARN] [FileIO] - Arquivo de configuração 'config.yaml' não encontrado, usando valores padrão.
+[2025-10-08 10:00:58] [ERROR] [Database] - Falha na consulta SQL: 'SELECT * FROM non_existent_table'. Verifique o schema.
+[2025-10-08 10:01:10] [DEBUG] [AuthService] - Token de acesso gerado para 'admin'.
+[2025-10-08 10:01:25] [INFO] [SystemMonitor] - Memória livre: 8GB. Processo estável.
+[2025-10-08 10:01:30] [Error] [Network] - Erro de conexão SSL/TLS. Certificado expirado.
+[2025-10-08 10:01:40] [INFO] [HealthCheck] - Serviço rodando perfeitamente.
+[2025-10-08 10:01:50] [CRITICAL] [Main] - Um erro fatal causou a interrupção do processo.
+[2025-10-02 09:15:00] [DEBUG] [Legacy] - Dados antigos carregados sem problemas.

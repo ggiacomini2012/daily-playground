@@ -14,3 +14,4 @@ timestamp,acao,tarefa_especifica,duracao_minutos
 2025-10-02 10:31:34,CI/CD,Escreva um bloco inicial de um arquivo '.gitlab-ci.yml' ou '.github/workflows/main.yml' que define um estágio ('stage') chamado 'build'.,5
 2025-10-08 10:07:19,Estudo/Aula + GitHub,"Assista aos primeiros 5 minutos de um vídeo técnico no YouTube e crie um novo repositório no GitHub com o nome do tópico, fazendo um commit inicial com um `README.md` vazio.",5
 2025-10-08 10:33:28,Estudo/Aula + GitHub,"Assista aos primeiros 5 minutos de um vídeo técnico no YouTube e crie um novo repositório no GitHub com o nome do tópico, fazendo um commit inicial com um `README.md` vazio.",5
+2025-10-08 15:58:29,Bash/Terminal,Use o comando `grep` para encontrar todas as ocorrências da palavra 'error' em um arquivo `app.log` e redirecione a saída para um novo arquivo `errors_only.log`.,5

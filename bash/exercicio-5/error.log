@@ -1,0 +1,3 @@
+[2025-10-08 10:00:25] [ERROR] [Network] - Tempo limite de resposta excedido ao conectar com API externa. (Código 504)
+[2025-10-08 10:00:58] [ERROR] [Database] - Falha na consulta SQL: 'SELECT * FROM non_existent_table'. Verifique o schema.
+[2025-10-08 10:01:30] [Error] [Network] - Erro de conexão SSL/TLS. Certificado expirado.
