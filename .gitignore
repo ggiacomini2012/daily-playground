@@ -48,6 +48,6 @@ Thumbs.db
 build
 dist
 
-speed-track-dev/roteiro.json
-speed-track-dev/progress.json
-speed-track-dev/*.csv
+# speed-track-dev/roteiro.json
+# speed-track-dev/progress.json
+# speed-track-dev/*.csv
