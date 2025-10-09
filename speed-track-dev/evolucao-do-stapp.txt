@@ -1,0 +1,34 @@
+implemetar:
+tarefas com dificuldades
+    exemplo:
+        sou noob no js, me de exercicios noob
+        sou foda no java, me de exercicios senior
+histórico de tarefas:
+    exemplo: 
+        ontem fiz isso, hj nao vou repetir
+deck de tarefas
+    exemplo:
+        cada topico tem um arquivo com varias tarefas para o llm poder escolher
+roadmap do roadmap do roadmap
+    exemplo:
+        quero criar um jogo,
+        tenho o macro road map que tem um tempo para ser concluído
+        que é a soma do tempo das sub tarefas
+        que tambem conten infra-sub tarefas
+        assim tenho um extimativa do macro e todas inferiores
+        tudo muda dinamicamente
+atualizete bongo 3000
+    exemplo:
+        a llm tem contexto novo dos tópicos
+hiperbórico 4D 3 thousand
+    exemplo:
+        matrix de eisenhower
+        teremos 4 atividades:
+            FAZER: urgente - prazo curto, importante - alto impacto, 
+                Categoria: Crises (exemplos:  problemas urgentes, reclamações graves)
+            PROGRAMAR: não urgente - sem prazo imediato, importante - contribui para metas, 
+                Categoria: Planejamento (exemplos: novos projetos, relatórios estratégicos)
+            DELEGAR: urgente - exige atenção agora, não importante - baixo impacto, 
+                Categoria: Interrupções (exemplos: chamadas de rotina, e-mails não essenciais)
+            ELIMINAR: não urgente - sem prazo, não importante - nenhum valor, 
+                Categoria: Distrações (exemplos: reuniões sem pauta, tarefas inúteis)
