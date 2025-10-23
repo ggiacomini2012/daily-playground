@@ -2,129 +2,129 @@
   "roteiro_speed_tracking": [
     {
       "id": 1,
-      "acao": "JavaScript",
+      "acao": "Artigo LinkedIn",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Crie um array de 3 objetos em JS e use 'map' para retornar apenas o valor de uma chave específica de cada objeto."
+      "tarefa_especifica_hoje": "Rascunhe 3 bullet points de um post sobre 'o valor de testes de unidade' ou 'uma dica de produtividade em 60s' para o LinkedIn."
     },
     {
       "id": 2,
-      "acao": "Python",
+      "acao": "Estudo/Aula + GitHub",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Escreva uma função Python que receba uma lista de strings e retorne a mais longa."
+      "tarefa_especifica_hoje": "Encontre um repositório popular de 'Clean Code' no GitHub e clone/faça um fork para revisão futura. Não leia nada, apenas prepare o ambiente."
     },
     {
       "id": 3,
-      "acao": "Java",
+      "acao": "Aplicar para Vaga",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Declare uma classe 'Animal' em Java com um construtor que aceita o 'nome' e o imprime."
+      "tarefa_especifica_hoje": "Identifique uma vaga de desenvolvedor Júnior/Pleno e salve o link e 3 requisitos-chave em um bloco de notas (ou inicie a candidatura com um clique rápido)."
     },
     {
       "id": 4,
       "acao": "HTML",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Crie uma estrutura HTML básica com um `<header>`, um `<main>` com 3 `<article>`s vazios, e um `<footer>`."
+      "tarefa_especifica_hoje": "Crie um arquivo HTML e insira a tag `<picture>` com um elemento `<source>` para carregar uma imagem em dois formatos diferentes (`.webp` e `.jpg`)."
     },
     {
       "id": 5,
       "acao": "CSS",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Use Flexbox para centralizar um `div` com 100x100px na tela. Mantenha o arquivo CSS e HTML separados."
+      "tarefa_especifica_hoje": "Em uma folha de estilo, aplique `grid-template-areas` a um container e posicione 3 elementos filhos nomeados, verificando a visualização rápida no DevTools."
     },
     {
       "id": 6,
       "acao": "SQL",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Escreva uma consulta SQL para selecionar 'nome' e 'email' de uma tabela 'usuarios', mas apenas onde a 'idade' seja maior que 25."
+      "tarefa_especifica_hoje": "Escreva uma consulta SQL que utilize a função de janela `ROW_NUMBER()` para particionar dados por uma coluna (ex: departamento) e ordená-los por outra (ex: salário)."
     },
     {
       "id": 7,
       "acao": "Classes e POO",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Defina uma classe 'Carro' com um método 'acelerar' que aumenta um atributo 'velocidade' em 10."
+      "tarefa_especifica_hoje": "Em qualquer linguagem POO, crie uma classe `Relogio` com um método estático `getHoraAtual()` e um método de instância `incrementarSegundo()`."
     },
     {
       "id": 8,
       "acao": "MusicTutor",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Fazer exercício de 'Identificação de Acordes' no app MusicTutor por 5 minutos."
+      "tarefa_especifica_hoje": "fazer exercicio do app Musictutor"
     },
     {
       "id": 9,
       "acao": "Desafio HackerRank",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Ler o problema inicial de um novo Desafio de Algoritmos no HackerRank/LeetCode e esboçar a lógica em pseudocódigo."
+      "tarefa_especifica_hoje": "Abra um desafio 'Easy' de arrays no HackerRank (ou plataforma similar) e defina a estrutura da função e a lógica de um loop de iteração (não precisa resolver)."
     },
     {
       "id": 10,
       "acao": "Bash/Terminal",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Use `grep` combinado com `find` para buscar todos os arquivos `.js` no diretório atual que contenham a palavra 'async'."
+      "tarefa_especifica_hoje": "Use o comando `find` com a opção `-mtime -1` para listar todos os arquivos modificados no seu diretório `home` nas últimas 24 horas."
     },
     {
       "id": 11,
       "acao": "Assembly",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Pesquisar e anotar a função exata do registrador 'EAX' (x86) em uma operação de soma simples."
+      "tarefa_especifica_hoje": "Pesquise a sintaxe do comando `PUSH` e `POP` em Assembly (x86 ou ARM) e anote em 1 linha o que cada um manipula (registrador ou pilha)."
     },
     {
       "id": 12,
       "acao": "CI/CD",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Abrir a documentação do GitHub Actions e identificar o comando exato para fazer o 'checkout' do código no job."
+      "tarefa_especifica_hoje": "Pesquise um 'template' básico de pipeline CI/CD (GitHub Actions/GitLab CI) e identifique as etapas de 'Build' e 'Test'."
     },
     {
       "id": 13,
       "acao": "Docker Compose",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Escrever um arquivo `docker-compose.yml` que defina um único serviço, mapeando a porta 8080 do host para a porta 80 do contêiner 'nginx:latest'."
+      "tarefa_especifica_hoje": "Escreva um arquivo `docker-compose.yml` que defina dois serviços: um servidor web (nginx) e um banco de dados (postgres), configurando uma rede comum entre eles."
     },
     {
       "id": 14,
       "acao": "Git",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Crie um novo branch local (`git checkout -b 'feature/refactor-diario'`) e comite uma alteração vazia."
+      "tarefa_especifica_hoje": "Use o comando `git stash push -m \"WIP: Feature X\"` em um repositório local e depois `git stash pop` para restaurar. (Crie um arquivo temporário e edite-o antes de usar o stash)."
     },
     {
       "id": 15,
       "acao": "Testes",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Escreva um teste de unidade simples (em qualquer linguagem/framework) que verifique se uma função de soma retorna o valor esperado para '2+3'."
+      "tarefa_especifica_hoje": "Escreva a assinatura (cabeçalho) de um 'teste de integração' para uma rota API que insere um usuário no banco de dados, utilizando Jest/JUnit/pytest (ou similar)."
     },
     {
       "id": 16,
       "acao": "UX/UI e Design Patterns",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Pesquisar 2 exemplos de telas (sites ou apps) que utilizam o 'Design Pattern' de **Carrossel** (Carousel) e anotar suas falhas de usabilidade."
+      "tarefa_especifica_hoje": "Pesquise o Design Pattern 'Singleton' e descreva em uma frase quando NÃO usá-lo."
     },
     {
       "id": 17,
       "acao": "Segurança Cibernética",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Pesquisar e anotar a definição e um exemplo de ataque de 'Cross-Site Request Forgery' (CSRF)."
+      "tarefa_especifica_hoje": "Pesquise a vulnerabilidade 'SQL Injection' no OWASP Top 10 e anote 1 medida de prevenção principal (ex: consultas parametrizadas)."
     },
     {
       "id": 18,
       "acao": "Documentação/READMEs",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Adicionar uma seção de 'Requisitos' (com 3 itens) em um README.md de um projeto existente ou de rascunho."
+      "tarefa_especifica_hoje": "Crie um novo arquivo `README.md` e preencha as seções 'Pré-requisitos' e 'Como Instalar' com bullet points genéricos (ex: 'Node.js', 'npm install')."
     },
     {
       "id": 19,
-      "acao": "Artigo LinkedIn",
+      "acao": "JavaScript",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Escrever o título e 3 bullet points iniciais para um artigo no LinkedIn sobre 'A importância do Versionamento de Código' (Git)."
+      "tarefa_especifica_hoje": "Crie uma função em JS que receba um array de números e use o método `map()` para retornar um novo array com cada número multiplicado por 2."
     },
     {
       "id": 20,
-      "acao": "Estudo/Aula + GitHub",
+      "acao": "Python",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Abrir o próximo tópico de um curso/livro técnico e criar um repositório no GitHub para os exemplos de código."
+      "tarefa_especifica_hoje": "Escreva um *decorator* Python básico que apenas imprima 'Função sendo executada...' antes de chamar a função embrulhada (não precisa ser funcional, apenas a estrutura)."
     },
     {
       "id": 21,
-      "acao": "Aplicar para Vaga",
+      "acao": "Java",
       "tempo_minutos": 5,
-      "tarefa_especifica_hoje": "Abrir um site de vagas (ex: LinkedIn/Gupy) e ler a descrição da primeira vaga de 'Desenvolvedor Pleno' que aparecer."
+      "tarefa_especifica_hoje": "Declare uma classe Java chamada `Produto` e implemente a interface `Comparable<Produto>` (apenas a estrutura da classe e a assinatura do método `compareTo`)."
     }
   ]
 }
