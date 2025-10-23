@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 200px;
+            grid-template-areas:
+                "cabecalho cabecalho cabecalho"
+                /* Linha 1: Ocupada totalmente pelo 'cabecalho' */
+                "menu     principal   principal";
+            /* Linha 2: 'menu' na 1ª coluna, 'principal' nas 2ª e 3ª */
+            gap: 10px;
+            /* Espaçamento entre os elementos */
+            width: 80%;
+            margin: 20px auto;
+            border: 3px solid #0056b3;
+            /* Borda para destacar o container */
+        }
+          /* Estilos e Nomeação dos Itens Filhos */
+        .item {
+            padding: 15px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        /* Elemento 1: Cabeçalho (Ocupa as 3 colunas da Linha 1) */
+        .cabecalho {
+            background-color: #007bff;
+            grid-area: cabecalho; /* Associa este item à área nomeada 'cabecalho' */
+        }
+
+        /* Elemento 2: Menu (Ocupa a 1ª coluna da Linha 2) */
+        .menu {
+            background-color: #28a745;
+            grid-area: menu; /* Associa este item à área nomeada 'menu' */
+        }
+
+        /* Elemento 3: Principal (Ocupa as 2ª e 3ª colunas da Linha 2) */
+        .principal {
+            background-color: #ffc107;
+            grid-area: principal; /* Associa este item à área nomeada 'principal' */
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item cabecalho">Cabeçalho</div>
+        <div class="item menu">Menu Lateral</div>
+        <div class="item principal">Conteúdo Principal</div>
+    </div>
+</body>
+
+</html>

@@ -15,3 +15,9 @@ timestamp,acao,tarefa_especifica,duracao_minutos
 2025-10-08 10:07:19,Estudo/Aula + GitHub,"Assista aos primeiros 5 minutos de um vídeo técnico no YouTube e crie um novo repositório no GitHub com o nome do tópico, fazendo um commit inicial com um `README.md` vazio.",5
 2025-10-08 10:33:28,Estudo/Aula + GitHub,"Assista aos primeiros 5 minutos de um vídeo técnico no YouTube e crie um novo repositório no GitHub com o nome do tópico, fazendo um commit inicial com um `README.md` vazio.",5
 2025-10-08 15:58:29,Bash/Terminal,Use o comando `grep` para encontrar todas as ocorrências da palavra 'error' em um arquivo `app.log` e redirecione a saída para um novo arquivo `errors_only.log`.,5
+2025-10-23 09:32:17,Artigo LinkedIn,Rascunhe 3 bullet points de um post sobre 'o valor de testes de unidade' ou 'uma dica de produtividade em 60s' para o LinkedIn.,5
+2025-10-23 09:37:23,Estudo/Aula + GitHub,"Encontre um repositório popular de 'Clean Code' no GitHub e clone/faça um fork para revisão futura. Não leia nada, apenas prepare o ambiente.",5
+2025-10-23 09:42:28,Aplicar para Vaga,Identifique uma vaga de desenvolvedor Júnior/Pleno e salve o link e 3 requisitos-chave em um bloco de notas (ou inicie a candidatura com um clique rápido).,5
+2025-10-23 09:51:59,HTML,Crie um arquivo HTML e insira a tag `<picture>` com um elemento `<source>` para carregar uma imagem em dois formatos diferentes (`.webp` e `.jpg`).,5
+2025-10-23 10:01:26,CSS,"Em uma folha de estilo, aplique `grid-template-areas` a um container e posicione 3 elementos filhos nomeados, verificando a visualização rápida no DevTools.",5
+2025-10-23 10:06:32,SQL,Escreva uma consulta SQL que utilize a função de janela `ROW_NUMBER()` para particionar dados por uma coluna (ex: departamento) e ordená-los por outra (ex: salário).,5
