@@ -1,0 +1,19 @@
+js:
+const bob = 3;
+let bib = "bob";
+
+python:
+
+bob = 3
+bib: str = "bob"
+
+css:
+
+.bob {
+    height: 100%;
+}
+
+html:
+
+<div class="bob">hello</div>
+
