@@ -1,0 +1,124 @@
+{
+  "roteiro_speed_tracking": [
+    {
+      "id": 1,
+      "acao": "Produtividade - Organização",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Revise a lista de tarefas/pendências de dados de ontem e defina a prioridade (Alta, Média, Baixa) para as 3 tarefas mais críticas de hoje."
+    },
+    {
+      "id": 2,
+      "acao": "Python - Estruturas de Controle",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Escreva um bloco de código Python que itere sobre uma lista de 5 números e imprima apenas os números pares usando um loop 'for' e um 'if'."
+    },
+    {
+      "id": 3,
+      "acao": "Pandas - Visualização Inicial",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Carregue um arquivo CSV de exemplo (ou dataset local) com Pandas e utilize o método `.describe()` para analisar as estatísticas das colunas numéricas."
+    },
+    {
+      "id": 4,
+      "acao": "SQL - SELECT + WHERE",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Escreva uma query SQL para selecionar o nome e o email de todos os usuários da tabela 'usuarios' que moram na cidade de 'São Paulo'."
+    },
+    {
+      "id": 5,
+      "acao": "Limpeza de Dados - Conversão de Tipos",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Simule um cenário: crie uma Series Pandas com 5 valores numéricos como strings (ex: ['100', '25.5', '42']) e converta seu dtype para float."
+    },
+    {
+      "id": 6,
+      "acao": "Estatística Aplicada - Medidas Centrais",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Calcule manualmente (sem código) a média e a mediana para o seguinte conjunto de dados: [12, 15, 18, 20, 25]."
+    },
+    {
+      "id": 7,
+      "acao": "Visualização - Escolha de Gráfico",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Para visualizar a distribuição de uma variável contínua (ex: idade), defina qual o tipo de gráfico mais adequado (ex: Histograma, Gráfico de Barras, etc.) e o porquê."
+    },
+    {
+      "id": 8,
+      "acao": "Engenharia de Dados - Conceitos",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Em poucas linhas, descreva a diferença fundamental entre as arquiteturas ETL e ELT no contexto de pipelines de dados."
+    },
+    {
+      "id": 9,
+      "acao": "NumPy - Criação de Arrays",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Escreva um código NumPy que crie um array de 3x3 preenchido apenas com zeros e, em seguida, um array 1D com 10 números sequenciais de 1 a 10."
+    },
+    {
+      "id": 10,
+      "acao": "Estudo + GitHub - Resumo",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Resuma em um parágrafo (3-4 linhas) o último conceito de Data Science que você estudou e salve no arquivo 'resumo_conceito.txt'."
+    },
+    {
+      "id": 11,
+      "acao": "Ferramentas - Git/CLI",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Abra seu terminal/CLI e execute os comandos `git status` e `git log --oneline` em um repositório local de projetos de dados."
+    },
+    {
+      "id": 12,
+      "acao": "Pandas - GroupBy",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Simule a ação de agrupar dados: Escreva um código Pandas que agrupe por 'departamento' e calcule a média da coluna 'salario' de um DataFrame de exemplo."
+    },
+    {
+      "id": 13,
+      "acao": "Carreira - Networking",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Identifique uma postagem relevante sobre Data Analytics no LinkedIn e deixe um comentário construtivo que adicione valor à discussão."
+    },
+    {
+      "id": 14,
+      "acao": "SQL - JOINs",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Escreva a estrutura de um `LEFT JOIN` entre as tabelas 'produtos' (esquerda) e 'categorias' (direita), incluindo as colunas de união e os campos selecionados."
+    },
+    {
+      "id": 15,
+      "acao": "Limpeza de Dados - Tratamento de Nulos",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Em um DataFrame Pandas de exemplo, escreva o código para contar quantos valores nulos existem em cada coluna usando a combinação de métodos `.isnull()` e `.sum()`."
+    },
+    {
+      "id": 16,
+      "acao": "Python - Funções",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Defina uma função simples em Python chamada `calcula_cubo` que aceite um número como argumento e retorne o cubo desse número, testando-a com o valor 3."
+    },
+    {
+      "id": 17,
+      "acao": "Dashboards - Definição de Métricas",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Para um dashboard de vendas online, defina 3 métricas de negócios (KPIs) primárias (ex: taxa de conversão, ticket médio, etc.)."
+    },
+    {
+      "id": 18,
+      "acao": "NumPy - Indexação e Slicing",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Crie um array NumPy com 10 elementos e use slicing para extrair apenas os elementos da posição 3 até a 7."
+    },
+    {
+      "id": 19,
+      "acao": "Excel/Sheets - Funções Essenciais",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Em uma planilha, escreva e teste uma fórmula que utilize as funções `PROCV` (ou `VLOOKUP`) e `SE` (ou `IF`) para retornar um valor condicional de uma busca."
+    },
+    {
+      "id": 20,
+      "acao": "Visualização - Storytelling",
+      "tempo_minutos": 5,
+      "tarefa_especifica_hoje": "Observe um gráfico recente de algum projeto de dados e escreva uma única frase de 'insight' que resuma a principal conclusão para um público não-técnico."
+    }
+  ]
+}
